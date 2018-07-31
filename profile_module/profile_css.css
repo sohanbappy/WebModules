@@ -1,0 +1,77 @@
+html{
+background: url("nature5.jpg");
+background-size: cover;
+}
+
+.profile_container{
+	height: 450px;
+	width: 350px;
+	background: rgba(0,0,0,0.4);
+	padding: 20px;
+	color: white;
+	margin: 0 auto;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.pro_pic{
+	
+	border-radius: 50%;
+	height:150px;
+	width:150px;
+}
+
+h1{
+	color: white;
+	font-weight: bold;
+	
+}
+h4{
+	color: blue;
+}
+.contact{
+	
+	padding:50px;
+}
+p{
+	font-weight: 200;
+	letter-spacing: 1;
+}
+.social {
+	
+	font-size: 40px;
+}
+.social img{
+	height: 30px;
+	width: 30px;
+}
+
+.line_break{
+	
+	width: 350px;
+	border-top: 2px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

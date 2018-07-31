@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+ <title>Image Slider Demo</title>
+ <link rel="stylesheet" type="text/css" href="image_slider_css.css"/>
+
+ <script type="text/javascript">
+ <!---No. of variables depends on no. of Images->
+ var img1=new Image()
+ img1.src="car1.jpg"
+ 
+ var img2=new Image()
+ img2.src="car2.jpg"
+ 
+ var img3=new Image()
+ img3.src="car3.jpg"
+ 
+ var img4=new Image()
+ img4.src="car4.jpg"
+ 
+ var img5=new Image()
+ img5.src="car5.jpg"
+ 
+ var img6=new Image()
+ img6.src="car6.jpg"
+ 
+ var img7=new Image()
+ img7.src="car7.jpg"
+ 
+ var img8=new Image()
+ img8.src="car8.jpg"
+ 
+ var img9=new Image()
+ img9.src="car9.jpg"
+ 
+ </script>
+ </head>
+
+<body style="background-color: green">
+
+     <h1>Image Slider Demo<hr/></h1>
+  <div class="container">
+    
+	<img src="car1.jpg" name="slider" height="400px" width="100%"/>
+	
+	
+	<script type="text/javascript">
+	
+	var step=1
+	function slideStart(){
+	document.images.slider.src=eval("img"+step+".src")
+
+  if(step<9)
+      step++ 
+  else
+      step=1
+	  setTimeout("slideStart()",2000)
+	}
+	
+	slideStart()
+	
+	</script>
+	
+	<hr/>
+  </div>
+
+</body>
+
+</html>

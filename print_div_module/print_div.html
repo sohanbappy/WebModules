@@ -1,0 +1,37 @@
+<!IDOCTYPE HTML>
+<html>
+<head>
+	<title>Print part of the whole page</title>
+	<link rel="stylesheet" type="text/css" href="print_css.css"/>
+	
+	<script>
+	function printContent(d){
+	var restorpage=document.body.innerHTML;
+	var printDiv=document.getElementById(d).innerHTML;
+	document.body.innerHTML=printDiv;
+	window.print();
+	document.body.innerHTML=restorpage;
+	}
+	</script>
+</head>
+<body>
+
+<div id="div1">
+	<h1>Bappy's World!!!!!</h1>
+</div>
+<button onclick="printContent('div1')">Print Div1</button>
+
+<div id="div2">
+	<h1>Garbage Group!!!!!</h1>
+</div>
+<button onclick="printContent('div2')">Print Div2</button>
+
+<div id="div3">
+	<h1>Final Destination!!!!!</h1>
+</div>
+<button onclick="printContent('div3')">Print Div3</button>
+
+
+
+</body>
+</html>
